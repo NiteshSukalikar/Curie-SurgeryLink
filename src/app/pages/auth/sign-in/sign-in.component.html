@@ -1,0 +1,34 @@
+<div class="sidenav">
+  <div class="login-main-text">
+    <h2>Application<br> Login Page</h2>
+    <p>Login or register from here to access.</p>
+    <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+  </div>
+</div>
+<div class="main">
+  <div class="col-md-6 col-sm-12">
+    <div class="container">
+      <form class="form-group" [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+        <div class="example-container">
+          <mat-form-field appearance="outline">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="username" required>
+            <mat-error>
+              <control-messages [control]="signInForm.controls.username" [fieldName]="email"></control-messages>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="example-container">
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" formControlName="password" minlength="6" maxlength="20" required>
+            <mat-error>
+              <control-messages [control]="signInForm.controls.password" [fieldName]="Password"></control-messages>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <button class="ml-2" type="submit" [disabled]="!signInForm.valid" mat-raised-button>submit</button>
+      </form>
+    </div>
+  </div>
+</div>

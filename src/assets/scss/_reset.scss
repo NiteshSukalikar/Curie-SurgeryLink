@@ -1,0 +1,307 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'colors';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+a {
+  color: #000000;
+  text-decoration: none !important;
+  &:hover {
+    color: #39b54a;
+  }
+}
+
+a:focus,
+button:focus,
+.btn:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+label,
+select,
+textarea {
+  resize: none;
+}
+
+*,
+:after,
+:before,
+html,
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+::-webkit-selection {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden,
+.no-display {
+  display: none;
+}
+
+.clear,
+.no-padding {
+  padding: 0 !important;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.nobr {
+  white-space: nowrap !important;
+}
+
+.wrap {
+  white-space: normal !important;
+}
+
+.a-left {
+  text-align: left !important;
+}
+
+.a-center {
+  text-align: center !important;
+}
+
+.a-right {
+  text-align: right !important;
+}
+
+.v-top {
+  vertical-align: top;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.f-left,
+.left {
+  float: left !important;
+}
+
+.f-right,
+.right {
+  float: right !important;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.f-none {
+  float: none !important;
+}
+
+.f-fix {
+  float: left;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no_padding-top {
+  padding-top: 0 !important;
+}
+
+.no_padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.no_padding-right {
+  padding-right: 0 !important;
+}
+
+.no_padding-left {
+  padding-left: 0 !important;
+}
+
+.pR15 {
+  padding-right: 15px;
+}
+
+.pL15 {
+  padding-left: 15px;
+}
+
+.pB15 {
+  padding-left: 15px;
+}
+
+.pT15 {
+  padding-top: 15px;
+}
+
+.mB15 {
+  margin-bottom: 15px !important;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-b-15 {
+  padding-bottom: 15px;
+}
+
+.clear {
+  clear: both;
+  margin: 0;
+  height: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: ' ';
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+}
+
+.p-b-40 {
+  padding-bottom: 40px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h6 {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* buttons */
+
+.btn {
+  &.btn-green {
+    display: inline-block;
+    background: #39b54a;
+    border-radius: 25px;
+    font-size: 14px;
+    height: 26px;
+    padding: 0 10px;
+    line-height: 26px;
+    &:hover {
+      color: #2f3192;
+    }
+  }
+  &.btn-gradient {
+    height: 48px;
+    background: transparent -o-linear-gradient(301deg, #39b54a 0%, #2f3192 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(149deg, #39b54a 0%, #2f3192 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #be63d7;
+    border-radius: 24px;
+    padding: 0 25px;
+    line-height: 48px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    @include transition(all, 0.3s, ease);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear;
+    &:hover {
+      background: transparent -o-linear-gradient(301deg, #2f3192 0%, #39b54a 100%) 0% 0% no-repeat padding-box;
+      background: transparent linear-gradient(149deg, #2f3192 0%, #39b54a 100%) 0% 0% no-repeat padding-box;
+    }
+  }
+  &.btn-outline {
+    border: solid 1px #2f3192;
+    background: #fff;
+    border-radius: 24px;
+    padding: 12px 30px 11px;
+    &:hover,
+    &:focus {
+      outline: none;
+      background: #2f3192;
+      color: #fff;
+    }
+  }
+}
+
+.height-100 {
+  height: 100%;
+}

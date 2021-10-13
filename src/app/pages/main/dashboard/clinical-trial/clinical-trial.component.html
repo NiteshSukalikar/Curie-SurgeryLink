@@ -1,0 +1,9 @@
+<div class="content-inner-wrapper">
+    <h2>Manage User</h2>
+    <app-advanced-table id="MLManageAppTable" [downloadFileName]="downloadFileName" [metaData]="metaData" [targetList]="targetList"
+    [displayedColumns]="sendDisplayedColumns" [showColumnNames]="showColumnNames" [clickableColumns]="clickableColumns"
+    [inputColumns]="displayedColumns" [inputButtons]="actionButtons" (onTableActionClick)="onTableActionClick($event)"
+    (onChange)="onChange($event)">
+    </app-advanced-table>
+</div>
+
