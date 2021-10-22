@@ -1,0 +1,13 @@
+@import "../scss/theme/variables";
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: $primary;
+}
+
+.dropdown-toggle::after {
+  font-family: "icomoon" !important;
+  content: "\e900";
+  border-top: transparent;
+}

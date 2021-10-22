@@ -1,0 +1,47 @@
+@import "./variables";
+
+.btn {
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+  }
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: $primary-dark;
+  border-color: $primary-dark;
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: $secondary;
+  border-color: $secondary;
+
+  &:hover {
+    background-color: $secondary-dark;
+    border-color: $secondary-dark;
+  }
+}
+
+.btn-check:focus + .btn-secondary,
+.btn-secondary:focus {
+  color: #fff;
+  background-color: $secondary-dark;
+  border-color: $secondary-dark;
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}

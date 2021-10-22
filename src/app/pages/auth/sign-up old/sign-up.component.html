@@ -1,0 +1,30 @@
+<div class="content-inner-wrapper">
+    <!-- <custom-table [tableData]="orders" [tableColumns]="ordersTableColumns" [isFilterable]="true" [isExportable]="true"
+        [isPageable]="true" [paginationSizes]="[100]" [defaultPageSize]="4" (sort)="sortData($event)"
+        [rowActionIcon]="'remove_shopping_cart'" (rowAction)="removeOrder($event)">
+    </custom-table>
+
+    <div class="m-5">
+        <h1>{{'Welcome' | translate}}</h1>
+        <app-select-language></app-select-language>
+        <h3>{{'compB' | translate}}</h3>
+        <h3>{{'compA' | translate}}</h3>
+
+        <section>
+          <div class="example-label">Basic</div>
+          <div class="example-button-row">
+            <button class="ml-2" mat-raised-button>Basic</button>
+            <button class="ml-2" mat-raised-button color="primary">{{'Submit' | translate}}</button>
+            <button class="mr-2" mat-raised-button color="accent">{{'View' | translate}}</button>
+            <button class="mr-2" mat-raised-button color="warn">{{'Close' | translate}}</button>
+            <button class="mr-2" mat-raised-button disabled>{{'Update' | translate}}</button>
+          </div>
+        </section>
+      </div> -->
+
+
+      <button mat-raised-button color="warn" class="m-3" (click)="logout()">Logout</button>
+      <button mat-raised-button color="primary" class="m-3" (click)="sendNotification()">sendNotificationToSpecificUser1</button>
+      <button mat-raised-button color="primary" class="m-3" (click)="sendNotification2()">sendNotificationToSpecificUser2</button>
+      <button mat-raised-button color="primary" class="m-3" (click)="sendBroadcast()">broadcast</button>
+</div>

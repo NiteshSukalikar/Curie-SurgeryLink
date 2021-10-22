@@ -1,0 +1,45 @@
+.listing-blc {
+  .head-blc {
+    margin-bottom: 6px;
+  }
+  .list-item {
+    padding: 7px 15px;
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all ease 0.3s 0s;
+    .pic-cell {
+      width: 34px;
+      height: 34px;
+      background-color: #f5f5f5;
+      margin-right: 15px;
+    }
+    .txt-cell {
+      h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #383a42;
+        margin-bottom: 0;
+      }
+      h4 {
+        color: #9a9a9a;
+        margin-bottom: 0;
+        font-size: 12px;
+      }
+    }
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+  .foot-blc {
+    padding: 0 16px 14px;
+    a {
+      font-size: 14px;
+      text-decoration: underline;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}

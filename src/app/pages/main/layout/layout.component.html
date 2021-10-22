@@ -1,3 +1,15 @@
-<app-header></app-header>
-<app-side-bar></app-side-bar>
-<router-outlet></router-outlet>
+<main class="main-wrapper d-flex flex-column flex-fill overflow-auto">
+    <app-header></app-header>
+    <div class="main-wrapper-rw d-flex flex-fill overflow-auto">
+        <app-side-bar></app-side-bar>
+        <div class="right-wrapper d-flex flex-column  flex-fill overflow-auto">
+            <div class="inner-wrapper">
+                <div class="page-title">
+                    DASHBOARD
+                </div>
+                <router-outlet></router-outlet>
+            </div>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</main>

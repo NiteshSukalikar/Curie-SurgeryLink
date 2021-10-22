@@ -1,0 +1,30 @@
+// Color-Variables
+$blue      : #3796D2 !default;
+$blue-dark : #2d87c0 !default;
+
+$grey:#919EA7 !default;
+$grey-dark:#6c7780 !default;
+
+$green     : #65E2B3 !default;
+$yellow    : #F9CC91 !default;
+$purple    : #A3A9F9 !default;
+$red       : #F27878 !default;
+
+$base-color:#333;
+
+
+$primary          : $blue !default;
+$primary-dark     : $blue-dark !default;
+
+$secondary     : $grey !default;
+$secondary-dark     : $grey-dark !default;
+
+$warning          : $yellow !default;
+$info             : $purple !default;
+$success          : $green !default;
+$danger           : $red !default;
+
+
+// Font-Family
+$primary-font :'Jost',
+sans-serif;

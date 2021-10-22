@@ -1,0 +1,13 @@
+.content-inner-wrapper{
+    width: 85%;
+
+    .card-body{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 8rem;
+        background-image: linear-gradient(to bottom right, #5e8bca , rgb(175, 180, 230));
+    }
+}

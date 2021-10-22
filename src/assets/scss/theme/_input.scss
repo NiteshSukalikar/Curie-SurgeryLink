@@ -1,0 +1,136 @@
+@import './variables';
+
+.form-control {
+    font-size    : 18px;
+    font-weight  : 400;
+    height       : 48px;
+    border-radius: 5px;
+    color        : $base-color;
+    padding      : .375rem 17px;
+    border       : 2px solid #EFEAEA;
+
+    &::placeholder {
+        color: #DFDDDD;
+    }
+
+    &:-moz-placeholder {
+        color: #DFDDDD;
+    }
+}
+
+
+.custom-select {
+    background     : url('../../../assets/images/icons/angle-down.svg') right .75rem center/11px 10px no-repeat #fff;
+    background-size: 12px;
+}
+
+// Form-Style
+.form-group {
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .form-label,
+    label {
+        font-size    : 16px;
+        font-weight  : 400;
+        color        : rgba(0, 0, 0, 0.6);
+        margin-bottom: 5px;
+
+    }
+
+    .input-cell {
+        .icon {
+            left  : 17px;
+            top   : 0;
+            bottom: 0;
+
+            svg {
+                width: 18px;
+                fill : #000;
+            }
+        }
+
+        .form-control {
+            padding-left: 50px;
+        }
+    }
+
+    .input-cell.pass {
+        .form-control {
+            padding-right: 50px;
+        }
+
+        .btn {
+            top   : 0;
+            right : 0;
+            bottom: 0;
+
+            svg {
+                path {
+                    fill: $primary;
+                }
+            }
+        }
+    }
+}
+
+.checkbox-cell {
+    cursor: pointer;
+    color : $base-color !important;
+
+    input {
+        opacity   : 0;
+        visibility: hidden;
+    }
+
+    span {
+        display: inline-flex;
+    }
+
+    .icon {
+        width           : 22px;
+        height          : 22px;
+        background-color: #fff;
+        border          : 1px solid $base-color;
+        margin-right    : 17px;
+
+        @media(max-width:767px) {
+            margin-right: 10px;
+        }
+
+        span {
+            visibility: hidden;
+
+            svg {
+                width: 15px;
+                fill : #000;
+            }
+        }
+    }
+}
+
+.checkbox-cell input:checked+.icon {
+    span {
+        visibility: visible;
+
+    }
+}
+
+.login-link-rw {
+    a {
+        color: $base-color;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

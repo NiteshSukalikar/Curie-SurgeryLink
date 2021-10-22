@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+}
+.page-title {
+  background: url("../../../../assets/images/title-bg.png") 0 0 repeat;
+  padding: 22px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section-row {
+  margin-bottom: 35px;
+}

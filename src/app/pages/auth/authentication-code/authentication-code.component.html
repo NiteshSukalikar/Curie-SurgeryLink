@@ -1,0 +1,67 @@
+<div class="login-wrapper d-flex flex-column flex-fill position-relative">
+    <div class="container m-auto">
+        <div class="loign-rw d-flex align-items-center">
+            <div class="login-lft">
+                <h6>Welcome to</h6>
+                <h2>CR<span class="text-primary">Link</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elitraesent necduiaterat cursus vestibulumtiam eu
+                    egestas
+                    nibhsit
+                    amet dictum exullam quis lacus orciulla facilisi.
+                </p>
+                <a [routerLink]="['/auth/sign-in']" class="text-primary link">Go to Home</a>
+            </div>
+            <div class="login-rt">
+                <div class="login-bx auth text-center">
+                    <div class="form-hd-ttl">
+                        <h3>Authentication Code</h3>
+                        <p>
+                            Please enter one-time password
+                            <span class="d-blc">
+                                to verify your account
+                            </span>
+                        </p>
+                    </div>
+                    <div class="inner-blc">
+                        <form [formGroup]="AuthenticationForm" (ngSubmit)="onSubmit()">
+                            <div class="form-group">
+                                <div class="auth-code-rw">
+                                    <div class="row-cell d-flex justify-content-center">
+                                        <input type="tel" class="form-control" maxlength="6" name="otp" formControlName="OTP" />
+                                    </div>
+                                    <div class="invalid-feedback">This Feild is Required.</div>
+                                </div>
+                                <div class="auth-code-rw auth-code-btns">
+                                    <button type="submit" class="btn btn-primary">
+                                        Verify
+                                    </button>
+                                    <button type="button" class="btn btn-secondary">
+                                        Cancel
+                                    </button>
+                                </div>
+                                <div class="auth-code-rw otp-txt">
+                                    Receive One Time Password via:
+                                </div>
+                                <div class="auth-code-rw resend-btn">
+                                    <button type="button" class="btn btn-primary">
+                                        Resend Authentication Code
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btm-pic position-absolute">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="2500px" height="456px" viewBox="-567.482 0.595 2500 456"
+            enable-background="new -567.482 0.595 2500 456" xml:space="preserve">
+            <path id="Path_1166" d="M-567.328,256.688c0,0,130.974,126,594.994,48
+      	c464.022-78,639.901-312,1130.118-304s774.734,257.228,774.734,257.228v198.678h-2500L-567.328,256.688z" />
+        </svg>
+    </div>
+</div>

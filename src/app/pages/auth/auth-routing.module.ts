@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { AuthenticationCodeComponent } from './authentication-code/authentication-code.component';
 
 const appRoutes: Routes = [
   {
@@ -12,8 +13,12 @@ const appRoutes: Routes = [
         component: SignInComponent,
       },
       {
-        path: 'sign-up',
-        component: SignUpComponent,
+        path: 'forgot-password',
+        component: ForgotPasswordComponent,
+      },
+      {
+        path: 'authentication',
+        component: AuthenticationCodeComponent,
       },
       {
         path: '',

@@ -1,0 +1,32 @@
+@import './_variables';
+
+.bg-primary {
+  color           : #fff;
+  background-color: $primary !important;
+  border-color    : $primary !important;
+}
+
+
+// .bg-secondary {
+//   color           : #fff;
+//   background-color: $secondary !important;
+//   border-color    : $secondary !important;
+// }
+
+
+.bg-success {
+  color           : #fff;
+  background-color: $success !important;
+  border-color    : $success !important;
+}
+
+.bg-danger {
+  color           : #fff;
+  background-color: $danger !important;
+  border-color    : $danger !important;
+}
+
+.bg-warning {
+  background-color: $warning !important;
+  border-color    : $warning !important;
+}

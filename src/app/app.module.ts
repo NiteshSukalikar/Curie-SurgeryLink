@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor } from './utilities/_helper/jwt.interceptor';
 import { NotifierModule } from 'angular-notifier';
-import { NgxUiLoaderModule } from "ngx-ui-loader";
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
 import { customNotifierOptions } from './utilities/_services/notification.service';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 import { ModalModule } from 'ngx-bootstrap/modal';
@@ -28,6 +29,7 @@ import { MainModule } from './pages/main/main.module';
     NgxUiLoaderModule,
     NgIdleKeepaliveModule.forRoot(),
     ModalModule.forRoot(),
+    BsDropdownModule.forRoot(),
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

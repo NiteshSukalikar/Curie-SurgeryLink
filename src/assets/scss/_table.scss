@@ -1,0 +1,74 @@
+@import "../scss/theme/variables";
+
+.table-wrapper {
+  background-color: #fff;
+
+  table {
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+      border-color: rgba(112, 112, 112, 0.36) !important;
+    }
+    tr {
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+      &:hover {
+        box-shadow: 0 3px 12px #00000029;
+      }
+    }
+    th,
+    td {
+      padding: 0.5rem 15px;
+      vertical-align: middle;
+    }
+    td {
+      color: rgba($base-color, 0.8);
+    }
+    thead {
+      th {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 18px 15px;
+        color: $base-color;
+      }
+    }
+    .icons-cell {
+      width: 38px;
+      height: 38px;
+      background-color: #fafafa;
+      border: 1px solid #dcdcdc;
+      margin-right: 10px;
+    }
+    .action-cell {
+      a {
+        margin: 0 5px;
+        font-size: 16px;
+      }
+      .edit {
+        color: $primary;
+      }
+      .database {
+        color: $warning;
+      }
+      .mail {
+        color: $base-color;
+      }
+    }
+  }
+  .foot-blc {
+    padding: 0 14px 14px;
+    a {
+      text-decoration: underline;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}

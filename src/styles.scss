@@ -1,32 +1,65 @@
-// /* You can add global styles to this file, and also import other style files */
-// @import '.././node_modules/angular-notifier/styles';
-
-// html, body { height: 100%; }
-// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-@import "src/assets/scss/variables";
-@import "src/assets/scss/aspect-ratio";
-@import "src/assets/scss/flip-card";
-@import "src/assets/scss/lp-pages";
+// Theme CSS
+@import "./assets/scss/theme/variables";
+@import "./assets/scss/theme/input";
+@import "./assets/scss/theme/buttons";
+@import "./assets/scss/theme/alert";
+@import "./assets/scss/theme/badge";
+@import "./assets/scss/theme/bg";
+@import "./assets/scss/theme/text";
+@import "./assets/scss/common-style";
 
 @import "~angular-notifier/styles";
-@import "~bootstrap/dist/css/bootstrap.css";
+
 @font-face {
-  font-family: "Europa";
-  src: url("./assets/fonts/onlineWebFont_1.eot"); /* IE9*/
-  src: url("./assets/fonts/onlineWebFont_2.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/onlineWebFont_1.woff2") format("woff2"),
-    /* chrome firefox */ url("./assets/fonts/onlineWebFont_1.woff") format("woff"),
-    /* chrome firefox */ url("./assets/fonts/onlineWebFont_1.ttf") format("truetype"),
-    /* chrome firefox opera Safari, Android, iOS 4.2+*/ url("./assets/fonts/onlineWebFont_1.svg#Europa") format("svg"); /* iOS 4.1- */
+  font-family: "Calibri";
+  src: url("./assets/fonts/Calibri.woff2") format("woff2"),
+    url("./assets/fonts/Calibri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-html,
-body {
-  height: 100%;
+@font-face {
+  font-family: "Calibri";
+  src: url("./assets/fonts/Calibri-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Calibri-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-body {
-  margin: 0;
-  font-family: Europa, sans-serif;
-  background: #f6f5fa;
+
+@font-face {
+  font-family: "Calibri";
+  src: url("./assets/fonts/Calibri-Italic.woff2") format("woff2"),
+    url("./assets/fonts/Calibri-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("./assets/fonts/Calibri-Light.woff2") format("woff2"),
+    url("./assets/fonts/Calibri-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("./assets/fonts/Calibri-LightItalic.woff2") format("woff2"),
+    url("./assets/fonts/Calibri-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("./assets/fonts/Calibri-BoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/Calibri-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }

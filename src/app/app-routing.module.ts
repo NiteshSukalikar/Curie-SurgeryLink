@@ -7,7 +7,7 @@ const appRoutes: Routes = [
     path: '',
     pathMatch: 'full',
     redirectTo: '/auth/sign-in'
-  }, 
+  },
   {
     path: 'auth',
     loadChildren: () =>
@@ -17,9 +17,7 @@ const appRoutes: Routes = [
     path: 'user',
     component: LayoutComponent,
     loadChildren: () =>
-      import('./pages/main/main.module').then(
-        (m) => m.MainModule
-      ),
+      import('./pages/main/main.module').then((m) => m.MainModule),
   },
   {
     path: '**',
@@ -28,7 +26,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes,{enableTracing:true})],
+  imports: [RouterModule.forRoot(appRoutes, { enableTracing: true })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

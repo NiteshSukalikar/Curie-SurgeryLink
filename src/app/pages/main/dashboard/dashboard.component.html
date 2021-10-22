@@ -1,0 +1,148 @@
+<div class="page-inner">
+    <section class="section-row breif-card">
+        <app-breif-cards></app-breif-cards>
+    </section>
+    <section class="section-row md">
+        <div class="table-wrapper table-responsive card">
+            <div class="head-blc">
+                <h2>Organizations</h2>
+            </div>
+            <div class="inner-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Organization Name</th>
+                            <th scope="col">Contact Name</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
+                            <th scope="col" class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of tempItem">
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="icons-cell d-flex align-items-center justify-content-center rounded-circle">
+                                        <img class="img-fluid" src="../../../../assets/images/listing-logo.png"
+                                            alt="Logo" />
+                                    </span>
+                                    Mindful Medical
+                                </div>
+
+                            </td>
+                            <td>Philippe Bayock</td>
+                            <td>202-555-0138</td>
+                            <td>mindfulmedical@gmail.com</td>
+                            <td>
+                                <div class="action-cell text-center">
+                                    <a href="#" class="edit">
+                                        <span class="icon-edit"></span>
+                                    </a>
+                                    <a href="#" class="database">
+                                        <span class="icon-database"></span>
+                                    </a>
+                                    <a href="#" class="mail">
+                                        <span class="icon-envelope-email"></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="foot-blc text-end">
+                <a href="#">View All Organizations</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-row">
+        <div class="list-wrapper d-flex">
+            <div class="left-col flex-fill">
+                <div class="row-blc">
+                    <div class="table-wrapper table-responsive card">
+                        <div class="head-blc">
+                            <h2>Recent Sponsors</h2>
+                        </div>
+                        <div class="inner-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col" class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of tempItem">
+                                        <td>
+                                            Philippe
+                                        </td>
+                                        <td>Bayock</td>
+                                        <td>202-555-0138</td>
+                                        <td>202-555-0138</td>
+                                        <td>
+                                            <div class="action-cell text-center">
+                                                <a href="#" class="edit">
+                                                    <span class="icon-edit"></span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="foot-blc text-end">
+                            <a href="#">View All Sponsors</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-blc">
+                    <div class="table-wrapper table-responsive card">
+                        <div class="head-blc">
+                            <h2>Recent Sponsors</h2>
+                        </div>
+                        <div class="inner-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col" class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of tempItem">
+                                        <td>
+                                            Philippe
+                                        </td>
+                                        <td>Bayock</td>
+                                        <td>202-555-0138</td>
+                                        <td>202-555-0138</td>
+                                        <td>
+                                            <div class="action-cell text-center">
+                                                <a href="#" class="edit">
+                                                    <span class="icon-edit"></span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="foot-blc text-end">
+                            <a href="#">View All Sponsors</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <app-recent-participant></app-recent-participant>
+            </div>
+        </div>
+    </section>
+</div>

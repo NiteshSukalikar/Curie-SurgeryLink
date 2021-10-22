@@ -12,12 +12,12 @@ export class AuthenticationService {
   constructor(
     private http: HttpClient,
     private ngxService: NgxUiLoaderService
-  ) {}
+  ) { }
 
   login(model: any) {
     this.ngxService.start();
     return this.http
-      .post<any>(environment.baseUrlApi + endpointAuth.saveAuditLog, model)
+      .post<any>(environment.baseAuthApi + endpointAuth.login, model)
       .pipe(
         map((response) => {
           this.ngxService.stop();
@@ -30,4 +30,20 @@ export class AuthenticationService {
         })
       );
   }
+
+  LoginOTPVerification(OTPObj: any) {
+    this.ngxService.start();
+    return this.http.post<any>(environment.baseAuthApi + endpointAuth.LoginOTPVerification, OTPObj)
+        .pipe(map(response => {
+            this.ngxService.stop();
+            return response;
+        }),
+            catchError(err => {
+                // this.toastr.error(err);
+                console.log(err);
+                this.ngxService.stop();
+                return err;
+            })
+        );
+}
 }
